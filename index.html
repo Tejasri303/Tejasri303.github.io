@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejasri Sidda | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">&lt;Tejasri /&gt;</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi there, I'm</p>
+      <h1 class="hero-name">Tejasri</h1>
+      <h2 class="hero-role">
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Final year CS student at QUT, specialising in Cloud Computing &amp; AI.
+        Building scalable cloud apps, ML solutions, and user-focused experiences.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/"   target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tejasri-sidda/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:tejasrisidda@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.9.73-1.636 1.636-1.636h.749L12 10.87l9.615-7.048h.749c.904 0 1.636.732 1.636 1.636z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">about.js</span>
+        </div>
+        <pre class="code-body"><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="prop">name</span>: <span class="str">"Tejasri"</span>,
+  <span class="prop">degree</span>: <span class="str">"B.IT @ QUT"</span>,
+  <span class="prop">focus</span>: [
+    <span class="str">"Cloud Computing"</span>,
+    <span class="str">"AI / ML"</span>,
+    <span class="str">"Full-Stack Dev"</span>,
+  ],
+  <span class="prop">available</span>: <span class="bool">true</span>,
+};</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="avatar-wrap">
+            <div class="avatar-placeholder">T</div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            Final year Computer Science student at QUT (Bachelor of IT, AI Minor),
+            passionate about cloud computing, open-source technologies, and AI.
+            Currently interning at Gobourn Hub, building real-world tech solutions.
+          </p>
+          <p>
+            Experienced in cloud-based applications (AWS), machine learning models, and
+            full-stack development. Active QUT community member as an Event Coordinator
+            and International Student Peer Leader.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="6">0</span><span>+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="4">0</span><span>+</span>
+              <span class="stat-label">Roles</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span><span>+</span>
+              <span class="stat-label">Years in Tech</span>
+            </div>
+          </div>
+          <a href="/Users/teja/Desktop/Resume.pdf" class="btn btn-primary" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3>Programming &amp; Dev</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">C#</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">OOP</span>
+            <span class="tag">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3>Cloud &amp; Infrastructure</h3>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">EC2 / S3 / SQS</span>
+            <span class="tag">CloudWatch</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Bash</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3>AI &amp; Data</h3>
+          <div class="tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">MobileNetV2</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Data Modeling</span>
+            <span class="tag">Algorithm Design</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3>Security &amp; Tools</h3>
+          <div class="tags">
+            <span class="tag">Cyber Security</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Shopify / Wix</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Intern – Technology &amp; Business Team</h3>
+                <p class="timeline-company">Gobourn Hub</p>
+              </div>
+              <span class="timeline-date">Dec 2025 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Designed and developed the company's e-commerce website using Shopify.</li>
+              <li>Built and customised the company website using Wix, aligning with branding requirements.</li>
+              <li>Contributed to the NEST Waste Segregation Project (image classification for waste detection).</li>
+              <li>Developed the frontend interface for the PET Mobility Massager mobile application.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>International Student Peer Leader</h3>
+                <p class="timeline-company">Queensland University of Technology (QUT)</p>
+              </div>
+              <span class="timeline-date">Jul 2025 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Support international students during orientation and transition programs.</li>
+              <li>Provide guidance on QUT services, academic support, and wellbeing resources.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Event Coordinator</h3>
+                <p class="timeline-company">QUT The Emerging Coders Hub (QUT TECH)</p>
+              </div>
+              <span class="timeline-date">Mar 2025 – Nov 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Planned and ran tech events, securing sponsorships from industry professionals.</li>
+              <li>Handled all event setup, planning, and team coordination.</li>
+              <li>Helped students and professionals connect through networking events.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Admin Officer</h3>
+                <p class="timeline-company">Little Wonders Montessori</p>
+              </div>
+              <span class="timeline-date">Sep 2024 – Jun 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Managed administrative tasks requiring attention to detail and data accuracy.</li>
+              <li>Handled confidential student and family information with discretion.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-img" style="--hue:200">
+            <svg viewBox="0 0 60 40" fill="none"><path d="M10 20 Q20 8 30 20 Q40 32 50 20" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/><circle cx="15" cy="20" r="4" fill="rgba(255,255,255,.3)"/><circle cx="30" cy="20" r="4" fill="rgba(255,255,255,.5)"/><circle cx="45" cy="20" r="4" fill="rgba(255,255,255,.3)"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>Three-Body Physics Simulation API</h3>
+            <p>Distributed physics simulation using AWS microservices (EC2, S3, SQS, RDS). Scalable FastAPI service with job scheduling, data storage, and CloudWatch monitoring.</p>
+            <div class="project-tags">
+              <span>AWS</span><span>FastAPI</span><span>Python</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img" style="--hue:160">
+            <svg viewBox="0 0 60 40" fill="none"><circle cx="30" cy="20" r="14" fill="rgba(255,255,255,.12)"/><path d="M23 20 l4 4 l10-8" stroke="rgba(255,255,255,.7)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>NEST – Waste Segregation Classifier</h3>
+            <p>Image classification solution for automated waste detection at Gobourn Hub. Dataset preparation, preprocessing, and model experimentation for real-world inputs.</p>
+            <div class="project-tags">
+              <span>Python</span><span>ML</span><span>Image Classification</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img" style="--hue:30">
+            <svg viewBox="0 0 60 40" fill="none"><rect x="12" y="6" width="36" height="28" rx="3" fill="rgba(255,255,255,.12)"/><rect x="17" y="12" width="16" height="3" rx="1.5" fill="rgba(255,255,255,.5)"/><rect x="17" y="19" width="26" height="2.5" rx="1.25" fill="rgba(255,255,255,.3)"/><rect x="17" y="25" width="20" height="2.5" rx="1.25" fill="rgba(255,255,255,.3)"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>Fortune Cookie – Student Planner</h3>
+            <p>Cross-platform student-wellbeing app generating motivational "digital fortune cookies" with scheduling insights. Built with JavaFX and MySQL.</p>
+            <div class="project-tags">
+              <span>Java</span><span>JavaFX</span><span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img" style="--hue:290">
+            <svg viewBox="0 0 60 40" fill="none"><rect x="8" y="8" width="10" height="10" rx="2" fill="rgba(255,255,255,.2)"/><rect x="25" y="8" width="10" height="10" rx="2" fill="rgba(255,255,255,.1)"/><rect x="42" y="8" width="10" height="10" rx="2" fill="rgba(255,255,255,.15)"/><rect x="8" y="22" width="10" height="10" rx="2" fill="rgba(255,255,255,.1)"/><rect x="25" y="22" width="10" height="10" rx="2" fill="rgba(255,255,255,.25)"/><rect x="42" y="22" width="10" height="10" rx="2" fill="rgba(255,255,255,.1)"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>Sokoban AI Solver</h3>
+            <p>Intelligent agent using A* Search to solve the Sokoban warehouse puzzle with weighted box costs. Focused on admissible heuristics and constraint-based motion planning.</p>
+            <div class="project-tags">
+              <span>Python</span><span>A* Search</span><span>AI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img" style="--hue:340">
+            <svg viewBox="0 0 60 40" fill="none"><circle cx="30" cy="20" r="10" fill="rgba(255,255,255,.15)"/><circle cx="30" cy="20" r="5" fill="rgba(255,255,255,.3)"/><path d="M30 10 Q35 8 38 12" stroke="rgba(255,255,255,.5)" stroke-width="1.5" fill="none"/><path d="M30 10 Q25 8 22 12" stroke="rgba(255,255,255,.5)" stroke-width="1.5" fill="none"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>Transfer Learning Image Classifier</h3>
+            <p>Flower image classifier using MobileNetV2 and transfer learning. Evaluated with k-fold cross-validation, SGD tuning, and confusion matrix analysis.</p>
+            <div class="project-tags">
+              <span>Python</span><span>MobileNetV2</span><span>TensorFlow</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-img" style="--hue:220">
+            <svg viewBox="0 0 60 40" fill="none"><rect x="18" y="4" width="24" height="32" rx="4" fill="rgba(255,255,255,.12)"/><rect x="22" y="10" width="16" height="3" rx="1.5" fill="rgba(255,255,255,.5)"/><rect x="22" y="17" width="12" height="2.5" rx="1.25" fill="rgba(255,255,255,.3)"/><rect x="22" y="23" width="14" height="2.5" rx="1.25" fill="rgba(255,255,255,.3)"/><circle cx="30" cy="32" r="2" fill="rgba(255,255,255,.3)"/></svg>
+          </div>
+          <div class="project-info">
+            <h3>PET Mobility Massager App</h3>
+            <p>Frontend interface for a smart mobility massager mobile app at Gobourn Hub. Responsive UI, screen navigation, and user interaction flows focusing on usability.</p>
+            <div class="project-tags">
+              <span>Frontend</span><span>Mobile UI</span><span>UX Design</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-sub reveal">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:tejasrisidda@gmail.com">tejasrisidda@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location</strong>
+              <span>Brisbane, QLD, Australia</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <strong>Availability</strong>
+              <span class="available-badge">Open to work</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <span class="field-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <span class="field-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Send Message</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="logo">&lt;Tejasri /&gt;</span>
+      <p>© <span id="year"></span> Tejasri Sidda. Built with ❤️ and JavaScript.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
